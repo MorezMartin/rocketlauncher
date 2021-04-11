@@ -19,7 +19,8 @@ pub enum Users {
     UserDelete(AuthToken),
     UserLogin { email: String, password: String },
     UserLogout(AuthToken),
-    UserResp { nickname: String, name: Option<String>, surname: Option<String> }
+    UserResp { nickname: String, name: Option<String>, surname: Option<String> },
+    UserNone
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug)]
